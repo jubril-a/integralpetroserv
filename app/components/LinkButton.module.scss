@@ -1,0 +1,14 @@
+@use './variables.scss';
+
+.linkButton {
+    background-color: variables.$green-400;
+    padding: 1em 1.5em;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    display: inline-block;
+
+    &:hover {
+        background-color: variables.$orange-400;
+    }
+}

@@ -1,0 +1,170 @@
+@use './variables.scss';
+
+.header {
+    position: relative;
+
+    h1 {
+        font-size: 2.9rem;
+    }
+
+    .subheading {
+        font-size: 1.1rem;
+        line-height: 140%;
+    }
+}
+
+/* Hero 1 */
+
+.main_content {
+    display: grid;
+    gap: 1rem;
+
+    a {
+        width: fit-content;
+    }
+}
+
+.hero_1 {
+    height: 100vh;
+    background: url('/images/hero-background.jpg');
+    background-size: cover;
+    
+
+    .content_wrapper {
+        display: grid;
+        align-items: center;
+        height: 100%;
+    }
+
+    .main_content {
+        max-width: 580px;
+    }
+
+    h1 {
+        color: #fff;
+    }
+}
+
+/* hero 2 */
+.hero_2 {
+    min-height: 100vh;
+    background-color: variables.$green-500;
+    padding-block: 5rem;
+    display: grid;
+    align-items: center;
+
+    h1 {
+        color: #fff;
+        margin-bottom: 2rem;
+    }
+
+    .subheading {
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+}
+
+.content2_wrapper {
+
+    h1 {
+        max-width: 780px;
+    }
+}
+
+.hero2_content {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    height: 424px;
+    gap: 2rem;
+
+    .col2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.hero_2_image_1 {
+    background-image: url('/images/engineer.png');
+    background-size: cover;
+    background-color: variables.$orange-400;
+    border-radius: 12px;
+}
+
+.hero_2_image_2 {
+    background-image: url('/images/image-2.png');
+    background-size: cover;
+    background-color: variables.$green-400;
+    flex-grow: 1;
+    border-radius: 12px;
+}
+
+/* Hero 3 */
+
+.hero_3 {
+    min-height: 100vh;
+    background-color: #fff;
+    display: grid;
+    align-items: center;
+}
+
+.content3_wrapper {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero_3_image {
+    background-image: url('/images/hero-3.jpg');
+    background-position: 80% 0%;
+    background-size: 200%;
+    height: 560px;
+}
+
+
+/* Hero Controls*/
+
+.controlBoxWrapper {
+    width: 100vw;
+    position: absolute;
+    bottom: 60px;
+}
+
+.controlBox {
+    padding-block: .5rem;
+    display: flex;
+    gap: 1.5rem;
+
+    button {
+        width: 36px;
+        aspect-ratio: 1 / 1;
+        border-radius: 100%;
+        border: none;
+        background-color: variables.$green-400;
+        cursor: pointer;
+
+        img {
+            filter: invert(1);
+        }
+
+        &:hover {
+            background-color: variables.$orange-400;
+        }
+    }
+}
+
+.progressBars {
+    display: flex;
+    gap: .5rem;
+    flex-grow: 1;
+    align-items: center;
+
+    .progressBar {
+        background-color: variables.$gray-400;
+        height: 3px;
+        border-radius: 8px;
+        flex-grow: 1;
+        cursor: pointer;
+    }
+}
