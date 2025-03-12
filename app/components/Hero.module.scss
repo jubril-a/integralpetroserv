@@ -4,13 +4,18 @@
     position: relative;
 
     h1 {
-        font-size: 2.9rem;
+        font-size: clamp(2rem, 1.6727rem + 1.6364vw, 2.9rem);
     }
 
     .subheading {
-        font-size: 1.1rem;
+        font-size: clamp(1.15rem, 1.0227rem + 0.6364vw, 1.5rem);
         line-height: 140%;
     }
+}
+
+.hero_1, .hero_2, .hero_3 {
+    padding-inline: 2rem;
+    height: 100vh;
 }
 
 /* Hero 1 */
@@ -25,9 +30,9 @@
 }
 
 .hero_1 {
-    height: 100vh;
     background: url('/images/hero-background.jpg');
     background-size: cover;
+    background-position: center;
     
 
     .content_wrapper {
@@ -47,7 +52,6 @@
 
 /* hero 2 */
 .hero_2 {
-    min-height: 100vh;
     background-color: variables.$green-500;
     padding-block: 5rem;
     display: grid;
@@ -102,7 +106,6 @@
 /* Hero 3 */
 
 .hero_3 {
-    min-height: 100vh;
     background-color: #fff;
     display: grid;
     align-items: center;
@@ -110,16 +113,24 @@
 
 .content3_wrapper {
     display: grid;
-    grid-template-columns: 1.25fr 1fr;
     align-items: center;
     gap: 2rem;
+
+    @media (min-width: 920px) {
+        grid-template-columns: 1.25fr 1fr;
+
+        .hero_3_image {
+            height: 560px;
+            background-size: 200%;
+        }
+    }
 }
 
 .hero_3_image {
     background-image: url('/images/hero-3.jpg');
+    background-size: cover;
     background-position: 80% 0%;
-    background-size: 200%;
-    height: 560px;
+    min-height: 300px;
 }
 
 
@@ -129,6 +140,7 @@
     width: 100vw;
     position: absolute;
     bottom: 60px;
+    padding-inline: 2rem;
 }
 
 .controlBox {
