@@ -101,7 +101,6 @@ const Hero = () => {
         </div> */}
         <div className={styles.controlBoxWrapper}>
             <div className={`${styles.controlBox} constraint-I`}>
-                {/* <button><Image src="/images/play.png" width="26" height="24" alt="" /></button> */}
                 <div className={styles.progressBars}>
                     <div ref={BAR_1} className={styles.progressBar} onClick={() => {changeCurrent(HERO_1, BAR_1)}}></div>
                     <div ref={BAR_2} className={styles.progressBar} onClick={() => {changeCurrent(HERO_2, BAR_2)}}></div>

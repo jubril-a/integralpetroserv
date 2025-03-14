@@ -1,6 +1,7 @@
 import styles from './team.module.scss'
 import SectionHead from './SectionHead'
 import Card from './Card'
+import LinkButton from './LinkButton'
 
 const team = [
     {
@@ -39,6 +40,7 @@ const Team = () => {
                     <Card key={member.key} image={member.image} imgDesc={member.imgDesc} title={member.name} description={member.position} orientation="portrait" />
                 )}
             </div>
+            <LinkButton label="View Full Team Profile"/>
         </section>
     </div>
   )

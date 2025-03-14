@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import About from "./components/About"
 import Services from "./components/Services"
 import Team from "./components/Team"
+import Footer from "./components/Footer"
 
 const page = () => {
   return (
@@ -12,6 +13,7 @@ const page = () => {
       <About />
       <Services />
       <Team />
+      <Footer />
     </>
   )
 }

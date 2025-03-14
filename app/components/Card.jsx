@@ -3,7 +3,7 @@ import styles from './card.module.scss'
 const Card = ({image, title, description, orientation}) => {
   return (
     <div className={styles.card}>
-      <div className={orientation == "portrait" ? `${styles.imgContainer} ${styles.portrait}` : styles.imgContainer} style={{backgroundImage: `url(/images/${image})`}}>
+      <div className={orientation == "portrait" ? `${styles.imgContainer} ${styles.portrait}` : `${styles.imgContainer} ${styles.landscape}`} style={{backgroundImage: `url(/images/${image})`}}>
       </div>
       <div className={styles.description}>
         <h3>{title}</h3>

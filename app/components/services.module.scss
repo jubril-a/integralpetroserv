@@ -3,12 +3,13 @@
 
 .sectionWrapper {
     background-color: variables.$gray-300;
-    padding-block: 5rem;
+    padding: 5rem 2rem;
 }
 
 .servicesCards {
     display: grid;
     gap: 1.5rem;
     padding-block: 3rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
 }

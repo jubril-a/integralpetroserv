@@ -1,0 +1,86 @@
+@use './variables.scss';
+
+.footer {
+    background-color: variables.$gray-600;
+    color: #fff;
+    line-height: 140%;
+}
+
+.topWrapper {
+    background-color: variables.$gray-500;
+    padding: 4rem 2rem;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    > div {
+        max-width: 400px;
+    }
+
+    > div:last-child {
+        display: grid;
+        gap: .5rem;
+
+        span {
+            font-weight: 500;
+            display: block;
+            margin-bottom: .25rem;
+            color: variables.$green-400
+        }
+    }
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: variables.$green-400
+}
+
+.links {
+    display: flex;
+    gap: .5rem 1rem;
+    flex-wrap: wrap;
+    margin-block: 2rem;
+
+    a {
+        &:hover {
+            color: variables.$orange-400
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-block: 1.5rem;
+}
+
+.imgLink {
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover {
+        background-color: variables.$orange-400;
+    }
+
+    img {
+        filter: invert(1);
+    }
+}
