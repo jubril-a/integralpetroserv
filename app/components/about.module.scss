@@ -1,0 +1,31 @@
+@use './variables.scss';
+
+.about {
+    padding: 5rem;
+}
+
+.sub {
+    font-size: clamp(1.25rem, 1.0682rem + 0.9091vw, 1.75rem);
+    font-weight: 600;
+    max-width: 800px;
+    line-height: 120%;
+    padding-block: 3rem;
+}
+
+.aboutCol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    div:first-child {
+        background: url('/images/about.png');
+    }
+
+    div:last-child {
+        padding-block: 2rem;
+
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+}

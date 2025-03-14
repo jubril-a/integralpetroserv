@@ -1,0 +1,33 @@
+@use './variables.scss';
+
+// .card {
+
+// }
+
+.description {
+    padding-inline: .5rem;
+
+    h3 {
+        font-weight: 500;
+        max-width: 280px;
+        margin-bottom: .75rem;
+    }
+
+    p {
+        color: variables.$gray-500;
+        margin-bottom: 1rem;
+        line-height: 150%;
+    }
+}
+
+.imgContainer {
+    aspect-ratio: 3 / 2;
+    background-color: variables.$orange-400;
+    margin-bottom: 1.85rem;
+    background-size: cover;
+}
+
+.portrait {
+    aspect-ratio: 2 / 2.5;
+}
+

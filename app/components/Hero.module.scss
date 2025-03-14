@@ -3,19 +3,31 @@
 .header {
     position: relative;
 
+    
+
     h1 {
         font-size: clamp(2rem, 1.6727rem + 1.6364vw, 2.9rem);
     }
 
     .subheading {
-        font-size: clamp(1.15rem, 1.0227rem + 0.6364vw, 1.5rem);
+        font-size: clamp(1rem, 0.9091rem + 0.4545vw, 1.25rem);
         line-height: 140%;
     }
 }
 
 .hero_1, .hero_2, .hero_3 {
     padding-inline: 2rem;
-    height: 100vh;
+    padding-block: 8rem;
+
+    @media (min-height: 860px) {
+        height: 100vh;
+    }
+
+    // @media (min-width: 800px) {
+    //     min-height: 100vh;
+    //     align-items: center;
+    //     display: grid;
+    // }
 }
 
 /* Hero 1 */
@@ -52,8 +64,7 @@
 
 /* hero 2 */
 .hero_2 {
-    background-color: variables.$green-500;
-    padding-block: 5rem;
+    background-color: variables.$gray-500;
     display: grid;
     align-items: center;
 
@@ -77,9 +88,13 @@
 
 .hero2_content {
     display: grid;
-    grid-template-columns: 1.25fr 1fr;
     height: 424px;
     gap: 2rem;
+
+    @media (min-width: 760px) {
+        grid-template-columns: 1.25fr 1fr;
+
+    }
 
     .col2 {
         display: flex;
@@ -93,6 +108,10 @@
     background-size: cover;
     background-color: variables.$orange-400;
     border-radius: 12px;
+
+    @media (max-width: 760px) {
+        height: 300px;
+    }
 }
 
 .hero_2_image_2 {
@@ -101,6 +120,10 @@
     background-color: variables.$green-400;
     flex-grow: 1;
     border-radius: 12px;
+
+    @media (max-width: 760px) {
+        display: none;
+    }
 }
 
 /* Hero 3 */
@@ -116,7 +139,7 @@
     align-items: center;
     gap: 2rem;
 
-    @media (min-width: 920px) {
+    @media (min-width: 760px) {
         grid-template-columns: 1.25fr 1fr;
 
         .hero_3_image {
@@ -141,6 +164,10 @@
     position: absolute;
     bottom: 60px;
     padding-inline: 2rem;
+
+    @media (max-height: 860px) and (max-width: 760px) {
+        display: none;
+    }
 }
 
 .controlBox {
