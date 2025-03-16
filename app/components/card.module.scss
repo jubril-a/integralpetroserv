@@ -27,7 +27,12 @@
 }
 
 .portrait {
-    aspect-ratio: 2 / 2.5;
+    @media (max-width: 727px) {
+        aspect-ratio: 1 / 1;
+    }
+    @media (min-width: 727px) {
+        aspect-ratio: 2 / 2.5;
+    }  
 }
 
 .landscape {

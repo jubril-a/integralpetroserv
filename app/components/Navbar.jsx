@@ -13,7 +13,7 @@ const Navbar = () => {
         <nav className={styles.navbar}>
             <span className="logo">IPS</span>
             <button className={styles.mobile_btn}>
-              <Image src={isOpen ? "/images/close.png" : "/images/menu.png"} width="26" height="26" alt="menu" onClick={() => setIsOpen(!isOpen)}/>
+              <Image style={{'position': 'relative', 'z-index': '1000'}} src={isOpen ? "/images/close.png" : "/images/menu.png"} width="26" height="26" alt="menu" onClick={() => setIsOpen(!isOpen)}/>
             </button>
             <div className={isOpen ? `${styles.navlinks} ${styles.mobileVisible}` : styles.navlinks }>
                 <a href="" className={styles.navlink}>Home</a>

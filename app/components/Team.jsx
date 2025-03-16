@@ -33,14 +33,14 @@ const team = [
 const Team = () => {
   return (
     <div className={styles.sectionWrapper}>
-        <section className={`${styles.services} constraint-I`}>
+        <section className={`${styles.team} constraint-I`}>
             <SectionHead title="Our Management Team" subtitle="Led by seasoned professionals with extensive industry experience and a commitment to excellence." />
-            <div className={styles.servicesCards}>
+            <div className={styles.teamCards}>
                 {team.map((member) =>
                     <Card key={member.key} image={member.image} imgDesc={member.imgDesc} title={member.name} description={member.position} orientation="portrait" />
                 )}
             </div>
-            <LinkButton label="View Full Team Profile"/>
+            <LinkButton label="View Full Team Profile" />
         </section>
     </div>
   )
