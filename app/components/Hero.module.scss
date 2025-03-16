@@ -1,12 +1,26 @@
 @use './variables.scss';
 
-.header {
-    position: relative;
+.constraint_I {
+    width: min(100%, 1200px);
+    margin-inline: auto;
+  }
 
-    
+.header {
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: end;
+    padding: 5rem 2rem;
+    height: 640px;
+
+    @media (min-width: 480px) {
+        height: 100vh;
+        padding-bottom: 2rem;
+    }
 
     h1 {
         font-size: clamp(2rem, 1.6727rem + 1.6364vw, 2.9rem);
+        color: #fff;
     }
 
     .subheading {
@@ -15,185 +29,26 @@
     }
 }
 
-.hero_1, .hero_2, .hero_3 {
-    padding-inline: 2rem;
-    padding-block: 8rem;
-
-    @media (min-height: 860px) {
-        height: 100vh;
-    }
-
-    // @media (min-width: 800px) {
-    //     min-height: 100vh;
-    //     align-items: center;
-    //     display: grid;
-    // }
-}
-
-/* Hero 1 */
-
 .main_content {
     display: grid;
     gap: 1rem;
+    padding-bottom: 5rem;
 
     a {
         width: fit-content;
     }
 }
 
-.hero_1 {
-    background: url('/images/hero-background.jpg');
-    background-size: cover;
-    background-position: center;
-    
-
-    .content_wrapper {
-        display: grid;
-        align-items: center;
-        height: 100%;
-    }
-
-    .main_content {
-        max-width: 580px;
-    }
-
-    h1 {
-        color: #fff;
-    }
-}
-
-/* hero 2 */
-.hero_2 {
-    background-color: variables.$gray-500;
-    display: grid;
-    align-items: center;
-
-    h1 {
-        color: #fff;
-        margin-bottom: 2rem;
-    }
-
-    .subheading {
-        color: #fff;
-        margin-bottom: 1rem;
-    }
-}
-
-.content2_wrapper {
-
-    h1 {
-        max-width: 780px;
-    }
-}
-
-.hero2_content {
-    display: grid;
-    height: 424px;
-    gap: 2rem;
-
-    @media (min-width: 760px) {
-        grid-template-columns: 1.25fr 1fr;
-
-    }
-
-    .col2 {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-}
-
-.hero_2_image_1 {
-    background-image: url('/images/engineer.png');
-    background-size: cover;
-    background-color: variables.$orange-400;
-    border-radius: 12px;
-
-    @media (max-width: 760px) {
-        height: 300px;
-    }
-}
-
-.hero_2_image_2 {
-    background-image: url('/images/image-2.png');
-    background-size: cover;
-    background-color: variables.$green-400;
-    flex-grow: 1;
-    border-radius: 12px;
-
-    @media (max-width: 760px) {
-        display: none;
-    }
-}
-
-/* Hero 3 */
-
-.hero_3 {
-    background-color: #fff;
-    display: grid;
-    align-items: center;
-}
-
-.content3_wrapper {
-    display: grid;
-    align-items: center;
-    gap: 2rem;
-
-    @media (min-width: 760px) {
-        grid-template-columns: 1.25fr 1fr;
-
-        .hero_3_image {
-            height: 560px;
-            background-size: 200%;
-        }
-    }
-}
-
-.hero_3_image {
-    background-image: url('/images/hero-3.jpg');
-    background-size: cover;
-    background-position: 80% 0%;
-    min-height: 300px;
+.main_content {
+    max-width: 580px;
 }
 
 
 /* Hero Controls*/
 
-.controlBoxWrapper {
-    width: 100vw;
-    position: absolute;
-    bottom: 60px;
-    padding-inline: 2rem;
-
-    @media (max-height: 860px) and (max-width: 760px) {
-        display: none;
-    }
-}
-
-.controlBox {
-    padding-block: .5rem;
-    display: flex;
-    gap: 1.5rem;
-
-    button {
-        width: 36px;
-        aspect-ratio: 1 / 1;
-        border-radius: 100%;
-        border: none;
-        background-color: variables.$green-400;
-        cursor: pointer;
-
-        img {
-            filter: invert(1);
-        }
-
-        &:hover {
-            background-color: variables.$orange-400;
-        }
-    }
-}
-
 .progressBars {
+    padding-block: .5rem;
+
     display: flex;
     gap: .5rem;
     flex-grow: 1;
