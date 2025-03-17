@@ -1,0 +1,57 @@
+@use './variables.scss';
+
+.Wrappper {
+    background-color: black;
+    padding-block: 8rem;
+    color: #fff;
+
+    @media (min-width: 1024px) {
+        display: grid;
+        align-items: center;
+        min-height:100vh;
+
+        header {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: variables.$orange-400;
+    }
+
+    @media (max-width: 1232px) {
+        padding-inline: 2rem;
+    }
+}
+
+.hero_image {
+    min-height: 196px;
+    background-color: variables.$orange-400;
+    margin-bottom: 3rem;
+    background-image: url('/images/hr.jpg');
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width: 700px) {
+        aspect-ratio: 3 / 1;
+    }
+}
+
+.hero_text {
+    max-width: 640px;
+
+    .heading {
+        font-size: clamp(1.25rem, 1.0682rem + .9091vw, 1.75rem);
+        font-weight: 600;
+        max-width: 800px;
+        line-height: 140%;
+        margin-block: .5rem .85rem;
+    }
+}
+
+.bodyText {
+    color: #fff;
+    opacity: .65;
+}

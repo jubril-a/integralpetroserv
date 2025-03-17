@@ -32,7 +32,7 @@ const team = [
 
 const Team = () => {
   return (
-    <div className={styles.sectionWrapper}>
+    <div className={`${styles.sectionWrapper} section`}>
         <section className={`${styles.team} constraint-I`}>
             <SectionHead title="Our Management Team" subtitle="Led by seasoned professionals with extensive industry experience and a commitment to excellence." />
             <div className={styles.teamCards}>

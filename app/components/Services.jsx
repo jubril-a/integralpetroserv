@@ -38,7 +38,7 @@ const services = [
 
 const Services = () => {
   return (
-    <div className={styles.sectionWrapper}>
+    <div className={`section ${styles.sectionWrapper}`}>
         <section className={`${styles.services} constraint-I`}>
             <SectionHead title="Our Core Services" subtitle="Optimizing production, developing talent, and managing assets." />
             <div className={styles.servicesCards}>

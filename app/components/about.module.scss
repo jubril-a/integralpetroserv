@@ -1,9 +1,5 @@
 @use './variables.scss';
 
-.about {
-    padding: 5rem 2rem;
-}
-
 .sub {
     font-size: clamp(1.25rem, 1.0682rem + 0.9091vw, 1.75rem);
     font-weight: 600;

@@ -10,20 +10,22 @@
     h3 {
         font-weight: 500;
         max-width: 280px;
-        margin-bottom: .75rem;
+        margin-bottom: .5rem;
     }
 
     p {
         color: variables.$gray-500;
         margin-bottom: 1rem;
-        line-height: 150%;
+        font-size: 14px;
+        line-height: 140%;
     }
 }
 
 .imgContainer {
     background-color: variables.$orange-400;
-    margin-bottom: 1.85rem;
+    margin-bottom: 1.5rem;
     background-size: cover;
+    border-radius: 8px;
 }
 
 .portrait {

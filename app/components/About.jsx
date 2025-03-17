@@ -4,7 +4,8 @@ import SectionHead from './SectionHead'
 
 const About = () => {
   return (
-    <section className={`${styles.about} constraint-I`}>
+    <div className='section'>
+      <section className={`${styles.about} constraint-I`}>
         <SectionHead title="About IPS" subtitle="Incorporated in Nigeria in 2019 with offices in Lagos and Houston." />
         <p className={styles.sub}>We are an integrated oil and gas servicing and consulting firm with strong expertise in Petroleum Geosciences and Engineering.</p>
         <div className={styles.aboutCol}>
@@ -15,7 +16,8 @@ const About = () => {
             <LinkButton label="Read More"/>
           </div>
         </div>
-    </section>
+      </section>
+    </div>
   )
 }
 
