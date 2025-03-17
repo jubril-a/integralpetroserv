@@ -1,9 +1,9 @@
 @use './variables.scss';
 
 .Wrappper {
-    background-color: black;
+    // background-color: black;
     padding-block: 8rem;
-    color: #fff;
+    // color: #fff;
 
     @media (min-width: 1024px) {
         display: grid;
@@ -51,7 +51,7 @@
     }
 }
 
-.bodyText {
-    color: #fff;
-    opacity: .65;
-}
+// .bodyText {
+//     color: #fff;
+//     opacity: .65;
+// }

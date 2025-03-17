@@ -2,33 +2,8 @@ import styles from './team.module.scss'
 import SectionHead from './SectionHead'
 import Card from './Card'
 import LinkButton from './LinkButton'
+import { team } from './data'
 
-const team = [
-    {
-        key: "person-1",
-        image: "taye.jpg",
-        name: "Taye Akewusola",
-        position: "Principal Consultant/ Managing Partner"
-    },
-    {
-        key: "person-2",
-        image: "bruce.jpg",
-        name: "Engr. Onengiye G. Bruce",
-        position: "Principal Partner"
-    },
-    {
-        key: "person-3",
-        image: "henry.jpg",
-        name: "Henry Ogunnusi",
-        position: "(M.Sc.) Principal Partner"
-    },
-    {
-        key: "person-4",
-        image: "rotimi.jpg",
-        name: "Rotimi F. Ogunlowo",
-        position: "Reservoir Engineering Consultant"
-    },
-]
 
 const Team = () => {
   return (

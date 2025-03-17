@@ -1,37 +1,37 @@
 import localFont from 'next/font/local'
 
-export const MonaSans = localFont({
+export const Poppins = localFont({
   src: [
     {
-      path: '../public/fonts/MonaSans/Mona-Sans-Regular.woff2',
+      path: '../public/fonts/Poppins/Poppins-Regular.woff',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../public/fonts/MonaSans/Mona-Sans-Medium.woff2',
+      path: '../public/fonts/Poppins/Poppins-Medium.woff',
       weight: '500',
       style: 'normal',
     },
     {
-      path: '../public/fonts/MonaSans/Mona-Sans-SemiBold.woff2',
+      path: '../public/fonts/Poppins/Poppins-SemiBold.woff',
       weight: '600',
       style: 'normal',
     },
-    {
-      path: '../public/fonts/MonaSans/Mona-Sans-Bold.woff2',
-      weight: '700',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/MonaSans/Mona-Sans-ExtraBold.woff2',
-      weight: '800',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/MonaSans/Mona-Sans-Black.woff2',
-      weight: '900',
-      style: 'normal',
-    },
+    // {
+    //   path: '../public/fonts/Poppins/',
+    //   weight: '700',
+    //   style: 'normal',
+    // },
+    // {
+    //   path: '../public/fonts/Poppins/',
+    //   weight: '800',
+    //   style: 'normal',
+    // },
+    // {
+    //   path: '../public/fonts/Poppins/',
+    //   weight: '900',
+    //   style: 'normal',
+    // },
   ],
 })
 

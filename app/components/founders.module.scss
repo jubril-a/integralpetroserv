@@ -1,0 +1,19 @@
+.founder {
+    display: flex;
+    gap: 2rem;
+
+    > div:first-child {
+        flex: 300px 0 0;
+        // position: sticky;
+        // top: 500px;
+    }
+}
+
+.founderInfo {
+    p {
+        margin-bottom: 1rem;
+        font-size: 17px;
+        line-height: 32px;
+        color: #242424;
+    }
+}
