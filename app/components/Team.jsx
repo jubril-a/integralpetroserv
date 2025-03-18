@@ -15,7 +15,7 @@ const Team = () => {
                     <Card key={member.key} image={member.image} imgDesc={member.imgDesc} title={member.name} description={member.position} orientation="portrait" />
                 )}
             </div>
-            <LinkButton label="View Full Team Profile" />
+            <LinkButton label="View Full Team Profile" destination="/team" />
         </section>
     </div>
   )

@@ -1,8 +1,8 @@
 import styles from './LinkButton.module.scss'
 
-const LinkButton = ({label}) => {
+const LinkButton = ({label, destination}) => {
   return (
-    <a href="#" className={styles.linkButton}>{label}</a>
+    <a href={destination} className={styles.linkButton}>{label}</a>
   )
 }
 

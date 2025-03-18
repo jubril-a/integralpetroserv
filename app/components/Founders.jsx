@@ -3,7 +3,7 @@ import Founder from './Founder';
 
 const Founders = () => {
     return (
-        <section className='constraint-I'>
+        <section className='section constraint-I'>
             <Founder person_id="0" />
             <Founder person_id="1" />
             <Founder person_id="2" />
