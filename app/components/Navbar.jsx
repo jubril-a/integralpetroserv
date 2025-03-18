@@ -20,7 +20,7 @@ const Navbar = () => {
                 <a href="" className={styles.navlink}>About Us</a>
                 <a href="" className={styles.navlink}>Our Services</a>
                 <a href="/team" className={styles.navlink}>Management Team</a>
-                <LinkButton label="Contact Us" />
+                <LinkButton label="Contact Us" destination="/contact" />
             </div>
             
         </nav>
