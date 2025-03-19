@@ -9,7 +9,9 @@
         padding-block: 5rem;
 
         > div:first-child {
-            flex: 260px 0 0;
+            flex-basis: 260px;
+            flex-grow: 0;
+            flex-shrink: 0;
             position: sticky;
             top: 100px;
             height: fit-content;
