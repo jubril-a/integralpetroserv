@@ -1,0 +1,114 @@
+@use './variables.scss';
+
+.h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    position: relative;
+    width: fit-content;
+
+    &:after {
+        content: "";
+        width: 60%;
+        height: 2px;
+        background-color: variables.$green-400;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+    }
+}
+
+.form {
+    display: grid;
+    gap: 1.5rem;
+    width: min(500px, 100%);
+    margin: auto;
+    margin-bottom: 5rem;
+
+    span {
+        font-size: 14px;
+    }
+
+    input {
+        display: block;
+        height: 2.75rem;
+    }
+
+    textarea {   
+        height: 160px;
+    }
+
+    input, textarea {
+        width: 100%;
+        margin-top: 8px;
+        border: 1px solid variables.$gray-400;
+        border-radius: 4px;
+        font-size: 1rem;
+        padding: 4px;
+
+        &:hover {
+            border: 1px solid #9e9e9e;
+        }
+
+        &:not([type="submit"]):focus {
+            border: 1px solid variables.$orange-400;
+            outline: none;
+        }
+    }
+
+    [type="submit"] {
+        background-color: variables.$green-400;
+        color: #fff;
+        border: none;
+        font-size: 15px;
+        font-weight: 600;
+
+        &:hover {
+            background-color: variables.$orange-400;
+            border: none;
+        }
+    }
+}
+
+.details {
+    background-color: rgba(245, 243, 243, 0.75);
+    max-width: 1024px;
+    margin: auto;
+    padding: 4rem;
+    border-radius: 8px;
+    border: 1px solid rgba(30, 30, 30, 0.1);
+}
+
+.contacts {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+    > * {
+        flex: 300px 1 0;
+    }
+    
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        line-height: 140%;
+    }
+}
+
+.iconBox {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: variables.$gray-400;
+    margin-bottom: 1rem;
+    display: grid;
+    place-items: center;
+
+    img {
+        opacity: .75;
+    }
+}
