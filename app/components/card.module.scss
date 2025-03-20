@@ -1,8 +1,13 @@
 @use './variables.scss';
 
-// .card {
+.card {
 
-// }
+    &:hover {
+        .landscape {
+            background-size: 150%;
+        }
+    }
+}
 
 .description {
     padding-inline: .5rem;
@@ -49,10 +54,6 @@
 
     @media (min-width: 670px) {
         aspect-ratio: 3 / 2;
-    }
-
-    &:hover {
-        background-size: 150%;
     }
 }
 
