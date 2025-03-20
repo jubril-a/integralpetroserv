@@ -1,13 +1,14 @@
 import styles from './about.module.scss'
 import LinkButton from "./LinkButton"
 import SectionHead from './SectionHead'
+import AnimatedHeading from './AnimatedHeading'
 
 const About = () => {
   return (
     <div className='section'>
-      <section className={`${styles.about} constraint-I`}>
+      <section className={"constraint-I"}>
         <SectionHead title="About IPS" subtitle="Incorporated in Nigeria in 2019 with offices in Lagos and Houston." />
-        <p className={styles.sub}>We are an integrated oil and gas servicing and consulting firm with strong expertise in Petroleum Geosciences and Engineering.</p>
+        <h3 className={styles.sub}><AnimatedHeading text="We are an integrated oil and gas servicing and consulting firm with strong expertise in Petroleum Geosciences and Engineering."/></h3>
         <div className={styles.aboutCol}>
           <div></div>
           <div>

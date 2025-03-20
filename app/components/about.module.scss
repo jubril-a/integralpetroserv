@@ -19,6 +19,7 @@
     div:first-child {
         background: url('/images/about.png');
         min-height: 320px;
+        background-color: variables.$gray-300;
     }
 
     div:last-child {

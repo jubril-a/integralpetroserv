@@ -6,27 +6,37 @@
   }
 
 .header {
-    background-size: cover;
-    background-position: center;
     display: grid;
     align-items: end;
     padding: 4rem 2rem;
     height: 640px;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 
     @media (min-width: 480px) {
         min-height: 100vh;
-        // padding-bottom: 2rem;
     }
 
     h1 {
-        font-size: clamp(2rem, 1.6727rem + 1.6364vw, 2.9rem);
-        color: #fff;
+        text-wrap: balance;
+        font-size: clamp(2rem, 1.8182rem + 0.9091vw, 2.5rem);
     }
+}
 
-    .subheading {
-        font-size: clamp(1rem, 0.9091rem + 0.4545vw, 1.25rem);
-        line-height: 140%;
-    }
+.subheading {
+    line-height: 140%;
+    font-size: clamp(1rem, 0.9636rem + 0.1818vw, 1.1rem);
+}
+
+.background {
+    content: "";
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    inset: 0;
 }
 
 .main_content {
@@ -44,7 +54,7 @@
 }
 
 .main_content {
-    max-width: 580px;
+    max-width: 640px;
 }
 
 
@@ -52,17 +62,24 @@
 
 .progressBars {
     padding-block: .5rem;
-
     display: flex;
     gap: .5rem;
     flex-grow: 1;
-    align-items: center;
+    align-items: center; 
+}
 
-    .progressBar {
-        background-color: variables.$gray-400;
-        height: 3px;
-        border-radius: 8px;
-        flex-grow: 1;
-        cursor: pointer;
+.progressBar {
+    background-color: variables.$gray-400;
+    height: 3px;
+    border-radius: 8px;
+    flex-grow: 1;
+    cursor: pointer;
+
+    &:hover {
+        background-color: variables.$orange-400;
     }
+}
+
+.active {
+    background-color: variables.$green-400;
 }

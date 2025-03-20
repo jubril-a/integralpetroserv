@@ -25,8 +25,9 @@
 .imgContainer {
     background-color: variables.$orange-400;
     margin-bottom: 1.5rem;
-    background-size: cover;
+    background-size: 100%;
     border-radius: 8px;
+    background-repeat: no-repeat;
 }
 
 .portrait {
@@ -39,12 +40,19 @@
 }
 
 .landscape {
+    transition: background-size 1s;
+    background-position: center;
+
     @media (max-width: 670px) {
         min-height: 240px;
     }
 
     @media (min-width: 670px) {
         aspect-ratio: 3 / 2;
+    }
+
+    &:hover {
+        background-size: 150%;
     }
 }
 
