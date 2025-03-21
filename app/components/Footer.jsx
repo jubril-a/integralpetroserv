@@ -9,11 +9,11 @@ const Footer = () => {
                 <div>
                     <p className={styles.name}>Integral PetroServ ltd.</p>
                     <nav className={styles.links}>
-                        <a href="">Home</a>
+                        <a href="/">Home</a>
                         <a href="">About</a>
                         <a href="">Services</a>
-                        <a href="">Team</a>
-                        <a href="">Contact</a>
+                        <a href="/team">Team</a>
+                        <a href="/contact">Contact</a>
                         <a href="">Mission</a>
                         <a href="">Vision</a>
                         <a href="">Core Values</a>

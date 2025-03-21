@@ -8,6 +8,7 @@ import Footer from "./components/Footer"
 const page = () => {
   return (
     <>
+      <span id="top"></span>
       <Navbar />
       <Hero />
       <About />
