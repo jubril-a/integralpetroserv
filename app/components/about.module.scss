@@ -5,7 +5,11 @@
     font-weight: 600;
     max-width: 800px;
     line-height: 120%;
-    padding-block: 3rem;
+    padding-block: 2rem;
+
+    @media (min-width: 960px) {
+        padding-block: 3rem;
+    }
 }
 
 .aboutCol {
@@ -20,6 +24,11 @@
         background: url('/images/about.png');
         min-height: 320px;
         background-color: variables.$gray-300;
+        background-size: cover;
+
+        @media (min-width: 760px) AND (max-width: 1080px) {
+           background-position: center;
+        }
     }
 
     div:last-child {

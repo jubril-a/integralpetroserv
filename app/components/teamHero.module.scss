@@ -1,9 +1,10 @@
 @use './variables.scss';
 
 .Wrappper {
-    background-color: black;
+    background-color: #011003;
     padding-block: 8rem;
     color: #fff;
+    position: relative;
 
     @media (min-width: 1024px) {
         display: grid;
@@ -24,6 +25,17 @@
     @media (max-width: 1232px) {
         padding-inline: 2rem;
     }
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/team-hero-overlay.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    mix-blend-mode: soft-light;
+    opacity: 16%;
 }
 
 .hero_image {

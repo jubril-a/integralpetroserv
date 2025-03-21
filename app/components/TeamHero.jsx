@@ -2,6 +2,7 @@ import styles from './teamHero.module.scss'
 const TeamHero = () => {
   return (
     <div className={styles.Wrappper}>
+      <div className={styles.overlay}></div>
         <header className='constraint-I'>
             <div>
             <div className={styles.hero_image}></div>

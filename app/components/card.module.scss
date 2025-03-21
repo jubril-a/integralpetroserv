@@ -30,7 +30,7 @@
 .imgContainer {
     background-color: variables.$orange-400;
     margin-bottom: 1.5rem;
-    background-size: 100%;
+    background-size: cover;
     border-radius: 8px;
     background-repeat: no-repeat;
 }
@@ -45,8 +45,9 @@
 }
 
 .landscape {
-    transition: background-size 1s;
+    background-size: 100%;
     background-position: center;
+    transition: background-size 1s;
 
     @media (max-width: 670px) {
         min-height: 240px;

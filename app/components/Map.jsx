@@ -1,7 +1,7 @@
 const Map = () => {
   return (
-    <section style={{paddingTop: "72px"}}>
-      <div style={{backgroundColor: "#1BBD36", paddingBlock: "2rem"}}>
+    <section style={{backgroundColor: "#1BBD36", paddingTop: "72px"}}>
+      <div style={{padding: "2rem"}}>
         <div className="constraint-I">
           <h1 style={{color: "#fff"}}>Contact Us</h1>
         </div>

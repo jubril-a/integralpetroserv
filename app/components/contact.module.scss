@@ -17,12 +17,15 @@
     }
 }
 
+// .contactForm {
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/images/hero-background2.jpg');
+// }
+
 .form {
     display: grid;
     gap: 1.5rem;
     width: min(500px, 100%);
     margin: auto;
-    margin-bottom: 5rem;
 
     span {
         font-size: 14px;
@@ -69,22 +72,16 @@
     }
 }
 
-.details {
-    background-color: rgba(245, 243, 243, 0.75);
-    max-width: 1024px;
-    margin: auto;
-    padding: 4rem;
-    border-radius: 8px;
-    border: 1px solid rgba(30, 30, 30, 0.1);
-}
-
 .contacts {
     display: flex;
-    gap: 2rem;
-    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;  
+
 
     > * {
-        flex: 300px 1 0;
+        flex: 300px 1 1;
     }
     
 
@@ -97,6 +94,22 @@
     p {
         line-height: 140%;
     }
+}
+
+.contactBox {
+    border-radius: 8px;
+    border: 1px solid rgba(30, 30, 30, 0.1);
+    background-color: rgba(245, 243, 243, 0.75);
+    padding: 2rem 1.5rem;
+
+    P {
+        font-size: 15px;
+        line-height: 150%;
+    }
+}
+
+.contactInfo {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .iconBox {
