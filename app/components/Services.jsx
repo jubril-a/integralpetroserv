@@ -46,7 +46,7 @@ const Services = () => {
                     <Card key={service.key} image={service.image} imgDesc={service.imgDesc} title={service.title} description={service.description} orientation="landscape"/>
                 )}
             </div>
-            <LinkButton label="View all Services"/>
+            <LinkButton label="View all Services" destination=""/>
         </section>
     </div>
   )

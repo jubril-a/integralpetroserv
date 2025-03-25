@@ -70,13 +70,25 @@
 }
 
 .progressBar {
+    flex-grow: 1;
+    cursor: pointer;
+    padding-block: 1rem;
+}
+
+.progressBar:hover {
+    .core {
+        background-color: variables.$orange-400;
+    }
+}
+
+.core {
+    all: unset;
     background-color: variables.$gray-400;
     height: 3px;
     border-radius: 8px;
-    flex-grow: 1;
-    cursor: pointer;
+    width: 100%;
 
-    &:hover {
+    &:focus {
         background-color: variables.$orange-400;
     }
 }

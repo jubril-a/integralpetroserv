@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <>
         <section className={`${styles.contactForm} section`}>
-            <form action="" className={styles.form}>
+            <form id="form" action="" className={styles.form}>
                 <h2 className={styles.h2}>Send us a Message</h2>
                 <label htmlFor="">
                     <span>Your Name</span>

@@ -1,0 +1,40 @@
+.founder {
+    padding-block: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    
+
+    @media (min-width: 680px) {
+        display: flex;
+        gap: 2rem;
+        padding-block: 5rem;
+
+        > div:first-child {
+            flex-basis: 260px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+    }
+
+    @media (max-width: 680px) {
+        > div:first-child {
+            max-width: 240px;
+        }
+    }
+}
+
+.founderInfo {
+
+    p {
+        margin-bottom: 1rem;
+        font-size: 17px;
+        line-height: 28px;
+        color: #242424;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}

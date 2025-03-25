@@ -13,6 +13,7 @@ const Hero = () => {
             h1: "Welcome to Integral PetroServ Limited",
             subheading: "Top-notch professional consulting services for upstream oil and gas businesses.",
             cta: "Explore Our Services",
+            ctaLink: "",
             bgImage: "hero-background.jpg",
         },
         hero_2 : {
@@ -20,13 +21,15 @@ const Hero = () => {
             h1: "Maximizing ROI through proven expertise in exploration and production",
             subheading: "Our goal is to create a difference in the E&P service delivery value chain while maximizing returns on investment and guaranteed clients satisfaction.",
             cta: "Request a Consultation",
+            ctaLink: "/contact#form",
             bgImage: "hero-background2.jpg",
         },
         hero_3 : {
             id: "3",
             h1: "Unmatched Expertise in Oil & Gas Exploration and Production",
             subheading: "With over 150 years of combined hands-on experience, our team delivers world-class projects across exploration, development, and production.",
-            cta: "Leverage Our Expertise",
+            cta: "View Our Experts",
+            ctaLink: "/team#mgmt",
             bgImage: "hero-background3.jpg",
         },
     }
@@ -47,7 +50,7 @@ const Hero = () => {
          initial={{filter: "blur(5px)", scale: 1.05}}
          animate={{filter: "blur(0)", scale: 1}}
          transition={{duration: 1}}
-         className={styles.background} style={{backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .4)), url(/images/${currentHero["bgImage"]})`}}></motion.div>
+         className={styles.background} style={{backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .5)), url(/images/${currentHero["bgImage"]})`}}></motion.div>
         <div className={styles.constraint_I}>
             <motion.div
              key={currentHero.id}
@@ -57,12 +60,18 @@ const Hero = () => {
              className={styles.main_content}>
                 <h1>{currentHero.h1}</h1>
                 <p className={styles.subheading}>{currentHero.subheading}</p>
-                <LinkButton label={currentHero.cta}/>
+                <LinkButton label={currentHero.cta} destination={currentHero.ctaLink}/>
             </motion.div>
             <div className={styles.progressBars}>
-                <div className={currentHero.id == 1 ? `${styles.progressBar} ${styles.active}` : styles.progressBar} onClick={() => {changeCurrent(heroContents.hero_1)}}></div>
-                <div className={currentHero.id == 2 ? `${styles.progressBar} ${styles.active}` : styles.progressBar} onClick={() => {changeCurrent(heroContents.hero_2)}}></div>
-                <div className={currentHero.id == 3 ? `${styles.progressBar} ${styles.active}` : styles.progressBar} onClick={() => {changeCurrent(heroContents.hero_3)}}></div>
+                <div className={styles.progressBar} onClick={() => {changeCurrent(heroContents.hero_1)}}>
+                    <button className={currentHero.id == 1 ? `${styles.core} ${styles.active}` : styles.core}></button>
+                </div>
+                <div className={styles.progressBar} onClick={() => {changeCurrent(heroContents.hero_2)}}>
+                    <button className={currentHero.id == 2 ? `${styles.core} ${styles.active}` : styles.core}></button>
+                </div>
+                <div className={styles.progressBar} onClick={() => {changeCurrent(heroContents.hero_3)}}>
+                    <button className={currentHero.id == 3 ? `${styles.core} ${styles.active}` : styles.core}></button>
+                </div>
             </div>
         </div>
     </motion.header>

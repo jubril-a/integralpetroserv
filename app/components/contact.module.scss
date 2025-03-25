@@ -5,6 +5,7 @@
     font-size: 2rem;
     position: relative;
     width: fit-content;
+    padding-bottom: .25rem;
 
     &:after {
         content: "";
@@ -16,10 +17,6 @@
         bottom: -8px;
     }
 }
-
-// .contactForm {
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/images/hero-background2.jpg');
-// }
 
 .form {
     display: grid;
@@ -99,8 +96,12 @@
 .contactBox {
     border-radius: 8px;
     border: 1px solid rgba(30, 30, 30, 0.1);
-    background-color: rgba(245, 243, 243, 0.75);
-    padding: 2rem 1.5rem;
+    background-color: rgba(245, 243, 243, 0.7);
+    padding: 2rem 1rem;
+
+    @media (min-width: 640px) {
+        padding-inline: 1.5rem;
+    }
 
     P {
         font-size: 15px;

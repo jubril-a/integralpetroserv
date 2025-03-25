@@ -1,6 +1,6 @@
 import Card from './Card';
 import { team } from './data'
-import styles from './founders.module.scss'
+import styles from './founder.module.scss'
 
 const Founder = ({person_id}) => {
     let member = team[Number(person_id)]
