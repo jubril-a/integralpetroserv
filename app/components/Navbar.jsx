@@ -17,8 +17,8 @@ const Navbar = () => {
             </button>
             <div className={isOpen ? `${styles.navlinks} ${styles.mobileVisible}` : styles.navlinks }>
                 <a href="/" className={styles.navlink}>Home</a>
-                <a href="" className={styles.navlink}>About Us</a>
-                <a href="" className={styles.navlink}>Our Services</a>
+                <a href="/about" className={styles.navlink}>About Us</a>
+                <a href="/services" className={styles.navlink}>Our Services</a>
                 <a href="/team" className={styles.navlink}>Management Team</a>
                 <LinkButton label="Contact Us" destination="/contact" />
             </div>

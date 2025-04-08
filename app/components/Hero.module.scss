@@ -8,21 +8,20 @@
 .header {
     display: grid;
     align-items: end;
-    padding: 4rem 2rem;
-    // height: 640px;
+    padding: 4rem 2rem 1rem;
     color: #fff;
     position: relative;
     width: 100%;
     overflow: hidden;
     min-height: max(100vh, 640px);
 
-    // @media (min-width: 480px) {
-    //     min-height: 100vh;
-    // }
-
     h1 {
         text-wrap: balance;
         font-size: clamp(2rem, 1.8182rem + 0.9091vw, 2.5rem);
+    }
+
+    @media (min-width: 1360px) {
+        padding-bottom: 4rem;
     }
 }
 
