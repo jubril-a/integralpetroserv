@@ -13,7 +13,7 @@ const Hero = () => {
             h1: "Welcome to Integral PetroServ Limited",
             subheading: "Top-notch professional consulting services for upstream oil and gas businesses.",
             cta: "Explore Our Services",
-            ctaLink: "",
+            ctaLink: "/services",
             bgImage: "hero-background.jpg",
         },
         hero_2 : {

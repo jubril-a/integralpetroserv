@@ -16,10 +16,9 @@
         }
     }
 
-    // h1 {
-    //     font-size: 1.2rem;
-    //     font-weight: 500;
-    // }
+    h1 {
+        color: variables.$orange-400;
+    }
 
     @media (max-width: 1232px) {
         padding-inline: 2rem;
@@ -64,5 +63,5 @@
 
 .bodyText {
     color: #fff;
-    opacity: .75;
+    opacity: .85;
 }

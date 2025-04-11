@@ -6,18 +6,18 @@ const Mnv = () => {
     <section className={`${styles.Wrapper} constraint-I`}>
       <div className={`${styles.mnv} ${styles.grid}`}>
           <div>
-            <Image src="/images/target.png" alt="" width={56} height={56}></Image>
+            <Image id="mission" src="/images/target.png" alt="" width={56} height={56}></Image>
             <h3>Mission Statement</h3>
             <p>To continuously deploy best in class tool kits, global best practices, and cutting-edge technologies to meet growing need for a real-time dynamic and precision-based projects execution and client&apos;s satisfaction.</p>
           </div>
           <div>
-            <Image src="/images/visionary.png" alt="" width={56} height={56}></Image>
+            <Image id="vision" src="/images/visionary.png" alt="" width={56} height={56}></Image>
             <h3>Vision Statement</h3>
             <p>To maximize stakeholders&apos; value, through sustainable and integrated subsurface solutions with full view of assets potential and associated uncertainties</p>
           </div>
       </div>
       <div className={styles.core}>
-      <Image src="/images/quality.png" alt="" width={56} height={56}></Image>
+      <Image id="values" src="/images/quality.png" alt="" width={56} height={56}></Image>
         <h3>Our Core Values</h3>
         <div className={styles.grid}>
           <div>

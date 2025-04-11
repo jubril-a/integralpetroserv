@@ -10,17 +10,17 @@ const Footer = () => {
                     <p className={styles.name}>Integral PetroServ ltd.</p>
                     <nav className={styles.links}>
                         <a href="/">Home</a>
-                        <a href="">About</a>
-                        <a href="">Services</a>
+                        <a href="/about">About</a>
+                        <a href="/services">Services</a>
                         <a href="/team">Team</a>
                         <a href="/contact">Contact</a>
-                        <a href="">Mission</a>
-                        <a href="">Vision</a>
-                        <a href="">Core Values</a>
+                        <a href="/about#mission">Mission</a>
+                        <a href="/about#vision">Vision</a>
+                        <a href="/about#values">Core Values</a>
                     </nav>
                     <div className={styles.socials}>
-                        <a href="" className={styles.imgLink}><Image src="/images/linkedin.png" width="20" height="20" alt="linkedin icon" /></a>
-                        <a href="" className={styles.imgLink}><Image src="/images/facebook.png" width="20" height="20" alt="facebook icon" /></a>
+                        <a href="https://www.linkedin.com/company/integral-petroserv-ips-ltd" className={styles.imgLink}><Image src="/images/linkedin.png" width="20" height="20" alt="linkedin icon" /></a>
+                        <a href="https://fb.me/integralpetroserveltd" className={styles.imgLink}><Image src="/images/facebook.png" width="20" height="20" alt="facebook icon" /></a>
                         <a href="" className={styles.imgLink}><Image src="/images/twitter.png" width="20" height="20" alt="twitter icon" /></a>
                         <a href="" className={styles.imgLink}><Image src="/images/instagram.png" width="20" height="20" alt="instagram icon" /></a>
                     </div>

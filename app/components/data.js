@@ -48,3 +48,140 @@ export const team = [
         ]
     },
 ]
+
+export const services = [
+    {
+        key: "service-1",
+        image: "subsurface.png",
+        title: "Subsurface Geoscience & Engineering",
+        description: "Integrated Subsurface Studies, Asset & Reservoir Management, ..."
+    },
+    {
+        key: "service-2",
+        image: "surface.png",
+        title: "Surface Engineering",
+        description: "Facilities Management, Asset Integrity Evaluation, Facilities Optimization, ..."
+    },
+    {
+        key: "service-3",
+        image: "equipment.png",
+        title: "Production Equipment & Procurement",
+        description: "Production Equipment Maintenance, Machineries Procurement, ..."
+    },
+    {
+        key: "service-4",
+        image: "hr.jpg",
+        title: "Human Resourcing and Capacity Building",
+        description: "Training, Mentoring, Sourcing, ..."
+    },
+    {
+        key: "service-5",
+        image: "funding.jpg",
+        title: "Funding/Financial Facilitators",
+        description: ""
+    },
+]
+
+export const detailed_services = [
+    {
+      service: "Integrated Subsurface Evaluation",
+      subservices: [
+        "Field Development strategies",
+        "Identifying new Opportunities",
+        "Infill/Exploration Upsides",
+        "Farm-in/Farm-out",
+        "Facilities Optimization",
+        "Reserves Updates and Reporting",
+        "Field Depletion Planning",
+        "Reservoir Characterization",
+      ],
+      imgName: "isubsurface.jpg",
+      imgDesc: "",
+    },
+    {
+      service: "Geological & Geophysical Studies",
+      subservices: [
+        "Subsurface mapping",
+        "3D Geological modelling",
+        "Reservoir characterization",
+        "Integrated trap evaluation",
+        "Fault seal analysis",
+        "Reservoir connectivity analysis",
+        "Basin modeling and evaluations",
+        "Seismic and sequence stratigraphy",
+        "3D Structural model re-construction",
+        "2D / 3D data Seismic interpretation",
+        "Depth Modelling",
+        "Multi-component and 4D seismic data analysis Structural re-construction",
+        "Seismic attribute analysis",
+        "Risks, Uncertainties and Volumetric Assessment",
+        "Vertical Seismic Profile (VSP) analysis",
+      ],
+      imgName: "geological.jpg",
+      imgDesc: "",
+    },
+    {
+      service: "Petrophysical Evaluation",
+      subservices: [
+        "Computerized log evaluation",
+        "Core analysis and special core analysis",
+        "Integration of log and core data",
+        "Thin beds studies",
+      ],
+      imgName: "test.png",
+      imgDesc: "",
+    },
+    {
+      service: "Reservoir Engineering",
+      subservices: [
+        "Material Balance Study",
+        "PVT studies",
+        "Reservoir Simulation",
+        "Field Development",
+        "Production Optimization through Reservoir Assessment",
+        "Decline Curve Analysis and Depletion studies",
+        "Enhanced Recovery studies",
+        "Reserve Evaluation and Auditing",
+        "Artificial lift assessment"
+      ],
+      imgName: "reservoir.png",
+      imgDesc: "",
+    },
+    {
+      service: "3D Seismic Data Survey",
+      subservices: [
+        "Illumination Studies/Pre-3D Seismic Survey Design",
+        "2D / 3D Seismic data acquisition QA/QC",
+        "Seismic data processing QA/QC",
+        "3D Simulation Modelling",
+      ],
+      imgName: "seismic.jpg",
+      imgDesc: "",
+    },
+    {
+      service: "Geotechnical Surveys",
+      subservices: [
+        "Seabed Survey",
+        "Shallow hazards evaluation",
+      ],
+      imgName: "geotechnical.jpg",
+      imgDesc: "",
+    },
+    {
+      service: "Integrated Production Studies",
+      subservices: [
+        "Integrated asset modelling",
+        "Productive capacity studies",
+        "Production forecasting",
+        "Well testing and Nodal Analysis",
+        "Workover studies and recommendations",
+        "Material balance reserve estimates",
+        "Multiple Data Integration at Varying scales",
+        "Gathering system and facilities constraint",
+        "de-bottlenecking studies",
+        "Tie-ins and field facility installation impact studies",
+      ],
+      imgName: "iproduction.jpg",
+      imgDesc: "",
+    },
+  ]
