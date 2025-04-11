@@ -17,7 +17,7 @@ const ServiceCard = ({id, heading, services, image, imageDesc}) => {
         <h3 className={styles.h3}>{heading}</h3>
         <Image className={styles.img} src={image} alt={imageDesc} width={414} height={232.88}></Image>
         <div>
-          {services.slice(0, 4).map((service) => <p className={styles.service}>{service}</p>)}
+          {services.slice(0, 4).map((service) => <p key={service.length} className={styles.service}>{service}</p>)}
           <button className={styles.button}>EXPAND VIEW →</button>
         </div>
     </div>

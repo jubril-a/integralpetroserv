@@ -84,7 +84,7 @@ export const services = [
 
 export const detailed_services = [
     {
-      id: 1,
+      id: 0,
       service: "Integrated Subsurface Evaluation",
       subservices: [
         "Field Development strategies",
@@ -100,7 +100,7 @@ export const detailed_services = [
       imgDesc: "",
     },
     {
-      id: 2,
+      id: 1,
       service: "Geological & Geophysical Studies",
       subservices: [
         "Subsurface mapping",
@@ -123,7 +123,7 @@ export const detailed_services = [
       imgDesc: "",
     },
     {
-      id: 3,
+      id: 2,
       service: "Petrophysical Evaluation",
       subservices: [
         "Computerized log evaluation",
@@ -135,7 +135,7 @@ export const detailed_services = [
       imgDesc: "",
     },
     {
-      id: 4,
+      id: 3,
       service: "Reservoir Engineering",
       subservices: [
         "Material Balance Study",
@@ -152,7 +152,7 @@ export const detailed_services = [
       imgDesc: "",
     },
     {
-      id: 5,
+      id: 4,
       service: "3D Seismic Data Survey",
       subservices: [
         "Illumination Studies/Pre-3D Seismic Survey Design",
@@ -164,7 +164,7 @@ export const detailed_services = [
       imgDesc: "",
     },
     {
-      id: 6,
+      id: 5,
       service: "Geotechnical Surveys",
       subservices: [
         "Seabed Survey",
@@ -174,7 +174,7 @@ export const detailed_services = [
       imgDesc: "",
     },
     {
-      id: 7,
+      id: 6,
       service: "Integrated Production Studies",
       subservices: [
         "Integrated asset modelling",
