@@ -2,6 +2,7 @@ import Image from "next/image"
 import styles from "./serviceCard.module.scss"
 
 const ServiceBox = ({heading, services, image, imageDesc}) => {
+
   return (
     <div className={styles.expanded}>
         <div className={styles.serviceBox}>

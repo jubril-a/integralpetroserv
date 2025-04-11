@@ -1,13 +1,16 @@
 'use client'
 
 import Image from "next/image"
+import { useContext } from "react"
 import styles from "./serviceCard.module.scss"
+import ActiveContext from "./ActiveContext"
 
-const ServiceCard = ({heading, services, image, imageDesc}) => {
+const ServiceCard = ({id, heading, services, image, imageDesc}) => {
+  let { setActive } = useContext(ActiveContext)
 
-    function clickHandler() {
-        alert("Hello World")
-    }
+  function clickHandler() {
+    setActive(id)
+  }
 
   return (
     <div className={styles.serviceCard} onClick={clickHandler}>
